@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
   },
 
   title: {
-    fontWeight: 500,
+    fontWeight: "500",
   },
 
   subTitle: {
