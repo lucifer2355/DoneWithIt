@@ -1,5 +1,4 @@
-import { StatusBar } from "expo-status-bar";
-import React from "react";
+import React, { useState } from "react";
 import { StyleSheet, Text, View, SafeAreaView } from "react-native";
 import { useDimensions } from "@react-native-community/hooks";
 
@@ -21,9 +20,17 @@ const categories = [
 ];
 
 export default function App() {
+  const [category, setCategory] = useState(categories[0]);
+
   return (
     <Screen>
-      <AppPicker items={categories} icon='apps' placeholder='Category' />
+      <AppPicker
+        selectedItem={category}
+        onSelectItem={(item) => setCategory(item)}
+        items={categories}
+        icon='apps'
+        placeholder='Category'
+      />
       <AppTextInput icon='email' placeholder='Email' />
     </Screen>
   );
