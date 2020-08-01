@@ -11,9 +11,14 @@ import Icon from "./components/Icon";
 import ListItem from "./components/ListItem";
 import AccountScreen from "./screens/AccountScreen";
 import ListingScreen from "./screens/ListingScreen";
+import AppTextInput from "./components/AppTextInput";
 
 export default function App() {
-  return <ListingScreen />;
+  return (
+    <Screen>
+      <AppTextInput placeholder='Username' icon='email' />
+    </Screen>
+  );
 }
 
 const styles = StyleSheet.create({
