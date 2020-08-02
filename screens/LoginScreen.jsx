@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { StyleSheet, Text, View, Image } from "react-native";
+import { Formik } from "formik";
 
 import Screen from "../components/Screen";
 import AppTextInput from "../components/AppTextInput";
