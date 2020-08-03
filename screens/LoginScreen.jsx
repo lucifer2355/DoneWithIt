@@ -1,11 +1,11 @@
 import React from "react";
 import { StyleSheet, Text, View, Image } from "react-native";
-import { Formik } from "formik";
 import * as Yup from "yup";
 
 import Screen from "../components/Screen";
-import AppFormField from "../components/AppFormField";
-import SubmitButton from "../components/SubmitButton";
+import AppFormField from "../components/forms/AppFormField";
+import SubmitButton from "../components/forms/SubmitButton";
+import AppForm from "../components/forms/AppForm";
 
 const validationSchema = Yup.object().shape({
   email: Yup.string().required().email().label("Email"),
@@ -17,36 +17,32 @@ const LoginScreen = () => {
     <Screen style={styles.container}>
       <Image style={styles.logo} source={require("../assets/logo-red.png")} />
 
-      <Formik
+      <AppForm
         initialValue={{ email: "", password: "" }}
         onSubmit={(values) => console.log(values)}
         validationSchema={validationSchema}
       >
-        {() => (
-          <>
-            <AppFormField
-              autoCapitalize='none'
-              autoCurrect={false}
-              placeholder='Email'
-              name='email'
-              keyboaedType='email-address'
-              textContentType='emailAddress'
-              icon='email'
-            />
-            <AppFormField
-              autoCapitalize='none'
-              autoCurrect={false}
-              name='password'
-              placeholder='Password'
-              secureTextEntry
-              textContentType='password'
-              icon='lock'
-            />
+        <AppFormField
+          autoCapitalize='none'
+          autoCurrect={false}
+          placeholder='Email'
+          name='email'
+          keyboaedType='email-address'
+          textContentType='emailAddress'
+          icon='email'
+        />
+        <AppFormField
+          autoCapitalize='none'
+          autoCurrect={false}
+          name='password'
+          placeholder='Password'
+          secureTextEntry
+          textContentType='password'
+          icon='lock'
+        />
 
-            <SubmitButton title='logon' />
-          </>
-        )}
-      </Formik>
+        <SubmitButton title='logon' />
+      </AppForm>
     </Screen>
   );
 };
