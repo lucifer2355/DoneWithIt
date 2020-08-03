@@ -4,9 +4,10 @@ import { useDimensions } from "@react-native-community/hooks";
 
 import Screen from "./components/Screen";
 import LoginScreen from "./screens/LoginScreen";
+import ListingEditScreen from "./screens/ListingEditScreen";
 
 export default function App() {
-  return <LoginScreen />;
+  return <ListingEditScreen />;
 }
 
 const styles = StyleSheet.create({
