@@ -1,8 +1,7 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet } from "react-native";
 import { useFormikContext } from "formik";
 
-import AppText from "./AppText";
 import ErrorMessage from "./ErrorMessage";
 import AppTextInput from "./AppTextInput";
 
