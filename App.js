@@ -9,13 +9,14 @@ import ListItem from "./components/ListItem";
 
 export default function App() {
   return (
-    <Screen>
-      <ListItem
-        image={require("./assets/mosh.jpg")}
-        title='Mosh'
-        subTitle='Hello'
-      />
-    </Screen>
+    <ListingEditScreen />
+    // <Screen>
+    //   <ListItem
+    //     image={require("./assets/mosh.jpg")}
+    //     title='Mosh'
+    //     subTitle='Hello'
+    //   />
+    // </Screen>
   );
 }
 
