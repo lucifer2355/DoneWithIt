@@ -1,23 +1,24 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { StyleSheet, Text, View, SafeAreaView } from "react-native";
 import { useDimensions } from "@react-native-community/hooks";
+import * as ImagePicker from "expo-image-picker";
+import * as Permissions from "expo-permissions";
 
 import Screen from "./components/Screen";
-import LoginScreen from "./screens/LoginScreen";
-import ListingEditScreen from "./screens/ListingEditScreen";
-import ListItem from "./components/ListItem";
 
 export default function App() {
-  return (
-    <ListingEditScreen />
-    // <Screen>
-    //   <ListItem
-    //     image={require("./assets/mosh.jpg")}
-    //     title='Mosh'
-    //     subTitle='Hello'
-    //   />
-    // </Screen>
-  );
+  const requestPermission = async () => {
+    const { granted } = await ImagePicker.requestCameraRollPermissionsAsync();
+    if (!granted) {
+      alert("You need to enable permission to ascess");
+    }
+  };
+
+  useEffect(() => {
+    requestPermission();
+  }, []);
+
+  return <Screen></Screen>;
 }
 
 const styles = StyleSheet.create({
