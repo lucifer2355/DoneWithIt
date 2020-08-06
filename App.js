@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { StyleSheet, Text, View, SafeAreaView } from "react-native";
 import { useDimensions } from "@react-native-community/hooks";
-import * as ImagePicker from "expo-image-picker";
 import * as Permissions from "expo-permissions";
+import * as ImagePicker from "expo-image-picker";
 
 import Screen from "./components/Screen";
 
