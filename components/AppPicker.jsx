@@ -17,8 +17,8 @@ import PickerItem from "./PickerItem";
 const AppPicker = ({
   icon,
   items,
-  onSelectItem,
   numberOfColumns = 1,
+  onSelectItem,
   PickerItemComponent = PickerItem,
   placeholder,
   selectedItem,
