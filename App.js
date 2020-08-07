@@ -10,7 +10,7 @@ export default function App() {
   const requestPermission = async () => {
     const { granted } = await ImagePicker.requestCameraRollPermissionsAsync();
     if (!granted) {
-      alert("You need to enable permission to ascess");
+      alert("You need to enable permission to ascess!");
     }
   };
 
