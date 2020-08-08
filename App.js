@@ -11,11 +11,13 @@ import ImageInputList from "./components/ImageInputList";
 import ListingEditScreen from "./screens/ListingEditScreen";
 import WelcomeScreen from "./screens/WelcomeScreen";
 import AuthNavigator from "./navigation/AuthNavigator";
+import navigationTheme from "./navigation/navigationTheme";
+import AppNavigator from "./navigation/AppNavigator";
 
 export default function App() {
   return (
-    <NavigationContainer>
-      <AuthNavigator />
+    <NavigationContainer theme={navigationTheme}>
+      <AppNavigator />
     </NavigationContainer>
   );
 }
