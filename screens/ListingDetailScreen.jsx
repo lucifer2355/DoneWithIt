@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
   },
 
   detailsContainer: {
-    padding: 20,
+    padding: 15,
   },
 
   title: {
