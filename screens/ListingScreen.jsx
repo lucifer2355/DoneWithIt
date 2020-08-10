@@ -8,6 +8,7 @@ import colors from "../config/colors";
 import listingsApi from "../api/listings";
 import AppText from "../components/AppText";
 import AppButton from "../components/AppButton";
+import ActivityIndicator from "../components/ActivityIndicator";
 
 const ListingScreen = ({ navigation }) => {
   const [listings, setListings] = useState([]);
@@ -37,7 +38,7 @@ const ListingScreen = ({ navigation }) => {
           <AppButton title='Retry' onPress={loadListings} />
         </>
       )}
-      <ActivityIndicator animating={loading} size='large' />
+      <ActivityIndicator visible={loading} />
       <FlatList
         data={listings}
         keyExtractor={(item) => item.id.toString()}
