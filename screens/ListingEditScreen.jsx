@@ -86,6 +86,7 @@ function ListingEditScreen() {
   const location = useLocation();
 
   const handleSubmit = async (listing) => {
+    setProgress(0);
     setUploadVisible(true);
     const result = await listingsApi.addListing(
       { ...listing, location },
