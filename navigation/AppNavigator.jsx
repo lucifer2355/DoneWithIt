@@ -13,7 +13,7 @@ const Tab = createBottomTabNavigator();
 const AppNavigator = () => (
   <Tab.Navigator>
     <Tab.Screen
-      name='Feed'
+      name='Home'
       component={FeedNavigator}
       options={{
         tabBarIcon: ({ color, size }) => (
@@ -30,13 +30,13 @@ const AppNavigator = () => (
             onPress={() => navigation.navigate(routes.LISTING_EDIT)}
           />
         ),
-        tabBarIcon: ({ color, size }) => (
-          <MaterialCommunityIcons
-            name='plus-circle'
-            color={color}
-            size={size}
-          />
-        ),
+        // tabBarIcon: ({ color, size }) => (
+        //   <MaterialCommunityIcons
+        //     name='plus-circle'
+        //     color={color}
+        //     size={size}
+        //   />
+        // ),
       })}
     />
     <Tab.Screen

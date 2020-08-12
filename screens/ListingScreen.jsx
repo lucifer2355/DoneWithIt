@@ -16,7 +16,6 @@ const ListingScreen = ({ navigation }) => {
 
   useEffect(() => {
     getListingsApi.request();
-    console.log(getListingsApi.data);
   }, []);
 
   return (
