@@ -25,29 +25,29 @@ function RegisterScreen() {
       >
         <FormField
           autoCorrect={false}
-          icon="account"
-          name="name"
-          placeholder="Name"
+          icon='account'
+          name='name'
+          placeholder='Name'
         />
         <FormField
-          autoCapitalize="none"
+          autoCapitalize='none'
           autoCorrect={false}
-          icon="email"
-          keyboardType="email-address"
-          name="email"
-          placeholder="Email"
-          textContentType="emailAddress"
+          icon='email'
+          keyboardType='email-address'
+          name='email'
+          placeholder='Email'
+          textContentType='emailAddress'
         />
         <FormField
-          autoCapitalize="none"
+          autoCapitalize='none'
           autoCorrect={false}
-          icon="lock"
-          name="password"
-          placeholder="Password"
+          icon='lock'
+          name='password'
+          placeholder='Password'
           secureTextEntry
-          textContentType="password"
+          textContentType='password'
         />
-        <SubmitButton title="Register" />
+        <SubmitButton title='Register' />
       </Form>
     </Screen>
   );
@@ -55,7 +55,7 @@ function RegisterScreen() {
 
 const styles = StyleSheet.create({
   container: {
-    padding: 10,
+    paddingHorizontal: 10,
   },
 });
 
