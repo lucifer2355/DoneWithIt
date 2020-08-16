@@ -9,6 +9,7 @@ import routes from "../navigation/routes";
 import ListItemSeparator from "../components/ListItemSeparator";
 import AuthContext from "../auth/context";
 import authStorage from "../auth/storage";
+import useAuth from "../auth/useAuth";
 
 const menuItem = [
   {
@@ -29,7 +30,7 @@ const menuItem = [
 ];
 
 const AccountScreen = ({ navigation }) => {
-  const { user, setUser } = useContext(AuthContext);
+  const { user, setUser } = useAuth();
 
   const handleLogOut = () => {
     setUser(null);
