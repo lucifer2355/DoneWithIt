@@ -10,6 +10,9 @@ import OfflineNotice from "./components/OfflineNotice";
 import AuthNavigator from "./navigation/AuthNavigator";
 import AuthContext from "./auth/context";
 import authStorage from "./auth/storage";
+import logger from "./utility/logger";
+
+logger.start();
 
 export default function App() {
   const [user, setUser] = useState();
