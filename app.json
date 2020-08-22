@@ -16,6 +16,9 @@
     "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
+    },
+    "notification": {
+      "iosDisplayInForeground": true
     }
   }
 }
