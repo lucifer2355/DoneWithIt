@@ -5,6 +5,7 @@ import { AppLoading } from "expo";
 
 import navigationTheme from "./navigation/navigationTheme";
 import AppNavigator from "./navigation/AppNavigator";
+import { navigationRef } from "./navigation/rootNavigation";
 import OfflineNotice from "./components/OfflineNotice";
 import AuthNavigator from "./navigation/AuthNavigator";
 import AuthContext from "./auth/context";
@@ -28,7 +29,7 @@ export default function App() {
   return (
     <AuthContext.Provider value={{ user, setUser }}>
       <OfflineNotice />
-      <NavigationContainer theme={navigationTheme}>
+      <NavigationContainer ref={navigationRef} theme={navigationTheme}>
         {user ? <AppNavigator /> : <AuthNavigator />}
       </NavigationContainer>
     </AuthContext.Provider>
