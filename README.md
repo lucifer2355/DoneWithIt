@@ -3,10 +3,7 @@ Basic shopping application build in react native
 
 <div align="center">
   <p align="center">
-    <img src="assets/login.png" width="205" height="450" />    
-    <img src="assets/home.png" width="205" height="450" />
-    <img src="assets/cart.png" width="205" height="450" />
-    <img src="assets/order.png" width="205" height="450" />
+    <img src="assets/donewithit.png" width="205" height="450" />    
   </p>
 </div>  
 
