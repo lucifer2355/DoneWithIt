@@ -1,5 +1,5 @@
 # pinterest
-Basic shopping application build in react native
+
 
 <div align="center">
   <p align="center">
