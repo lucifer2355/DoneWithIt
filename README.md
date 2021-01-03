@@ -12,6 +12,6 @@ Basic shopping application build in react native
 
   1. clone this repository <br>
   2. open cmd/terminal to clone repository folder <br>
-  3. run `npm install` **on windows** or `sudo npm install` **on ios/linux** <br>
+  3. run `yarn install` **on windows** or `sudo yarn install` **on ios/linux** <br>
   4. run `npm start`
 
