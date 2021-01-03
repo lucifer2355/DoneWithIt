@@ -3,7 +3,7 @@ Basic shopping application build in react native
 
 <div align="center">
   <p align="center">
-    <img src="assets/donewithit.png" width="205" height="450" />    
+    <img src="assets/donewithit.png" width="2284" height="580" />    
   </p>
 </div>  
 
